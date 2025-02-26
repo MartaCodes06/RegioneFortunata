@@ -1,0 +1,155 @@
+/* stile h4 */
+h4 {
+    font-size: 2vw;
+    font-family: monospace;
+    margin: auto;
+    padding: 0.5vw 0;
+    text-align: center;
+    background: blue;
+    color: #fff;
+}
+
+/* stile svg */
+svg {
+    width: 650px;
+    height: 750px;
+}
+
+/* stile delle singole regioni svg */
+path {
+    fill: #00aeff;
+    stroke: #ffffff;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+path:hover {
+    fill: #1900ff;
+}
+
+#map-container .selezionato path{
+    fill: #8f8f8f
+}
+
+/* stile elenco regioni rimaste */
+#list h4 {
+    margin-bottom: 0.7vw;
+}
+
+#list div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 0.7vw;
+    padding: 0px 0.3vw;
+    justify-items: center;
+    background-color: #e0e0e0;
+}
+
+#region span {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 0.5vw 0.8vw;
+}
+
+#region .sbarrato {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Stile del pulsante di restart */
+#restart-btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: darkblue;
+}
+
+/* media query per rendere lo schermo responsive */
+/* Per schermi di piccole dimensioni */
+@media (max-width: 430px) {
+    h4 {
+        font-size: 5vw;
+    }
+
+    #list div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #region span {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 495px) {
+    h4 {
+        font-size: 3.5vw;
+    }
+
+    #list div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #region span {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 495px) and (max-width: 576px) {
+    h4 {
+        font-size: 3.5vw;
+    }
+
+    #list div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #region span {
+        font-size: 3vw;
+    }
+}
+
+/* Per tablet */
+@media (min-width: 576px) and (max-width: 1024px) {
+    h4 {
+        font-size: 4vw;
+    }
+
+    #list div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #region span {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) and (orientation: landscape) {
+    h4 {
+        font-size: 3.5vw;
+    }
+
+    #list div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #region span {
+        font-size: 2.5vw;
+    }
+}
+
+/* Per desktop */
+@media (min-width: 1024px) {
+    
+}
