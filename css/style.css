@@ -27,6 +27,11 @@ path:hover {
     fill: #1900ff;
 }
 
+/* stile mappa */
+#map-container {
+    justify-content: center;
+}
+
 #map-container .selezionato path{
     fill: #8f8f8f
 }
