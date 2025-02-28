@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (id === regioneCasuale) {
         alert("🎉 Complimenti! Hai indovinato la regione fortunata!");
         disabilitaTutteLeRegioni();
+        disabilitaRegioneFortunata();
       } 
       else {
         tentativi--;
